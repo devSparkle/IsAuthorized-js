@@ -2,7 +2,7 @@
 	"name": "isauthorized",
 	"description": "A TypeScript port of the IsAuthorized library for Roblox",
 	"keywords": ["IsAuthorized"],
-	"version": "1.0.0-alpha3",
+	"version": "1.0.0-alpha4",
 	
 	"license": "Apache-2.0",
 	"bugs": "https://github.com/devSparkle/IsAuthorized-js/issues",
@@ -13,6 +13,7 @@
 	
 	"type": "module",
 	"module": "src/index.ts",
+	"main": "src",
 	
 	"devDependencies": {
 		"@types/bun": "latest"
