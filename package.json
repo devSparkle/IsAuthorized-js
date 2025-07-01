@@ -1,14 +1,23 @@
 {
-  "name": "isauthorized",
-  "type": "module",
-  "version": "1.0.0-alpha1",
-  
-  "module": "src/index.ts",
-  
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  }
+	"name": "isauthorized",
+	"description": "A TypeScript port of the IsAuthorized library for Roblox",
+	"keywords": ["IsAuthorized"],
+	"version": "1.0.0-alpha2",
+	
+	"license": "Apache-2.0",
+	"bugs": "https://github.com/devSparkle/IsAuthorized-js/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/devSparkle/IsAuthorized-js.git"
+	},
+	
+	"type": "module",
+	"module": "src/index.ts",
+	
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	}
 }
