@@ -1,7 +1,10 @@
 {
   "name": "isauthorized",
-  "module": "src/index.ts",
   "type": "module",
+  "version": "1.0.0-alpha1",
+  
+  "module": "src/index.ts",
+  
   "devDependencies": {
     "@types/bun": "latest"
   },
