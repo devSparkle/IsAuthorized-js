@@ -1,8 +1,9 @@
 name: Bun Package
 
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - "v*"
 
 jobs:
   publish-npm:
@@ -15,3 +16,13 @@ jobs:
       - run: bun publish
         env:
           NPM_CONFIG_TOKEN: ${{secrets.NPM_TOKEN}}
+  release:
+    runs-on: ubuntu-latest
+    needs: [publish-npm]
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: spenserblack/actions-tag-to-release@v3.0.0
