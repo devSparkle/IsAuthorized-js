@@ -45,3 +45,6 @@ jobs:
           # else
             # Tag already exists, no action needed and no output necessary
           fi
+        env:
+          GIT_USER_NAME: github-actions[bot]
+          GIT_USER_EMAIL: github-actions[bot]@users.noreply.github.com
