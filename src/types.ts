@@ -8,10 +8,6 @@ export type SiftedPermissions = (string | Flag | ((context: Context) => Promise<
 export type Context = {
 	[key: string]: unknown,
 	
-	discord?: bigint,
-	roblox?: bigint,
-	authentik?: bigint,
-	
 	debug?: boolean,
 }
 
